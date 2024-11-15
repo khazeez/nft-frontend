@@ -1,0 +1,72 @@
+.notification {
+    position: absolute;
+    padding: 2rem 1rem;
+    box-shadow: var(--box-shadow);
+    font-size: 1rem;
+    width: 25rem;
+    border-radius: 1rem;
+    left: -10rem;
+    top: 3.5rem;
+    z-index: 22222222;
+    background-color: var(--main-bg-color);
+    transition: all 0.3s ease-in;
+  }
+  
+  .notification > p {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
+  .notification_box {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1rem;
+    transition: all 0.3s ease-in;
+  }
+  
+  .notification_box:hover {
+    background-color: var(--icons-color);
+    color: var(--shadow-dark-color);
+    border-radius: 0.3rem;
+  }
+  
+  .notification_box_image {
+    border-radius: 5rem;
+  }
+  
+  .notification_box_info {
+    line-height: 1.3; /* Penyesuaian line-height untuk lebih baik */
+    font-weight: 600;
+    margin-top: -.8rem;
+  }
+  
+  .notification_box_info p {
+    font-size: 15px;
+    line-height: 1.3; /* Mengganti line-height kecil dengan nilai yang lebih baik */
+    position: relative;
+  }
+  
+  .notification_box_new {
+    width: .5rem;
+    height: .5rem;
+    border-radius: 50%;
+    background-color: aqua;
+  }
+
+  @media screen and (max-width: 35em) {
+    .notification {
+      width: 20rem;
+      left: -11rem;
+    }
+
+    .notification_box{
+      padding: .3rem;
+    }
+
+    .notification_box p {
+      font-size: 12px;
+    }
+  }
+  
